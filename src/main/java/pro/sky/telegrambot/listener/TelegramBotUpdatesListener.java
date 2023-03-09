@@ -18,10 +18,10 @@ import java.util.List;
 
 public class TelegramBotUpdatesListener implements UpdatesListener {
 
-    private Logger logger = LoggerFactory.getLogger(TelegramBotUpdatesListener.class);
-    private static String STR_CMD = "/start";
-    private static String GREET_MSG = "Welcome to bot!";
-    private static String INVALID_CMD = "Invalid command. Please try again";
+    private final Logger logger = LoggerFactory.getLogger(TelegramBotUpdatesListener.class);
+    private static final String STR_CMD = "/start";
+    private static final String GREET_MSG = "Welcome to bot!";
+    private static final String INVALID_CMD = "Invalid command. Please try again";
     private final TelegramBot telegramBot;
     private final NotificationTaskService notificationTaskService;
 

@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 @Service
 public class NotificationTaskServiceImpl implements NotificationTaskService {
-    Logger logger = LoggerFactory.getLogger(NotificationTaskService.class);
+    private final Logger logger = LoggerFactory.getLogger(NotificationTaskService.class);
 
     private final NotificationTaskRepository repository;
 

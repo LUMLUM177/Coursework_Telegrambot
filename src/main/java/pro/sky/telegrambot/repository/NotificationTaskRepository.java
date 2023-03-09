@@ -10,7 +10,7 @@ import java.util.Collection;
 @Repository
 public interface NotificationTaskRepository extends JpaRepository<NotificationTask,Long> {
 
-    @Query("SELECT id, chatId, messageContent, timeStamp, sentMessage FROM NotificationTask WHERE timeStamp <= CURRENT_TIMESTAMP")
+    @Query("SELECT id, chatId, messageContent, timeStamp FROM NotificationTask WHERE timeStamp <= CURRENT_TIMESTAMP")
     Collection<NotificationTask> getScheduledTasks();
 
 }
